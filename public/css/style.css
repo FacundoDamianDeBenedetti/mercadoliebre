@@ -1,0 +1,475 @@
+/* Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto','sans-serif';
+    font-size:12px;
+    background-color: #ebebeb;
+    
+}
+
+
+/*  Header  */
+
+
+header{
+    background-color:#EAC926;
+    padding:20px;
+}
+
+.header-form-logo{
+    display: inline-flex;
+}
+
+.logoMeLi{
+    width:50%;
+    margin-right:5px;
+}
+
+.header-form-logo form{
+    display: flex;
+    align-items: center;
+    width:50%;
+    margin-left:5px;
+    color:#ff0000;
+}
+
+.header-input{
+    border-radius: 5px 0 0 5px;
+    height: 38px;
+    width: 90%;
+    padding:5px;
+}
+
+.header-button{
+    height: 38px;
+    border-radius: 0 5px 5px 0;
+}
+
+.header-p{
+    text-align: center;
+    margin:15px;
+}
+
+a{
+    margin:10px;
+    color:#000000;
+}
+
+nav{
+    display:none;
+}
+
+.burger-menu{
+    background-color: #1259c3;
+    width:40px;
+    height:40px;
+    margin:20px 0 0 45%;
+    padding:11px;
+    border-radius: 5px;
+}
+
+
+/*  Home  */
+
+
+section img{
+    width:100%;
+}
+
+main{
+    width:90%;
+    margin: 0 auto;
+}
+
+.main-article{
+    margin:10px;
+    background-color: #fff;
+    
+}
+
+.articulo-producto{
+    border-top:1px solid #ebebeb;
+    padding:15px;
+    position: relative;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color:#39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.fa-bars{
+    color:#fff;
+    font-size:20px;
+}
+
+.titulares{
+    font-size:24px;
+    width: 100%;
+}
+
+.precios{
+    display: inline-block;
+    font-size:18px;
+    margin-right: 5px;
+}
+
+.descuentos{
+    display: inline-block;
+    color:#39b54a;
+    font-size:12px;
+}
+
+.descripciones{
+    font-size:16px;
+    font-weight: normal;
+    color:#666;
+    display:none;
+    margin-top: 16px;
+}
+
+
+/*  Footer  */
+
+
+footer{
+    background-color: #fff;
+    text-align: center;
+    padding:50px;
+    width:100%;
+    margin:auto;
+}
+
+.footer-article{
+    margin:20px 0 50px 0;
+    position:relative;
+}
+
+.footer-icon{
+    font-size:30px;
+    color:#1259c3;
+    margin-bottom:10px;
+}
+
+.footer-article > *:not(i){
+    color:#666;
+}
+
+.footer-article h3{
+    font-size:16px;
+}
+
+.footer-article h5{
+    position:absolute;
+    font-size:12px;
+    left:-30px;
+}       
+
+
+/*  Registro  */
+
+
+.form-container-register{
+    width: 80%;
+    margin:20px auto;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #666;
+}
+
+.form-register{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.form-register label{
+    width: 100%;
+    font-weight: bold;
+    color:#666;
+}
+
+.form-register input{
+    margin: 5px 0;
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    border-radius: 2.5px;
+    border: 1px solid #666;
+}
+
+.file input{
+    border:none;
+}
+
+.form-register-selectors{
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-register-selectors h4{
+    width: 100%;
+    font-weight: bold;
+    color:#666;
+    margin:5px 0;
+}
+
+.form-register-selectors *:not(h4){
+    margin:0 5px 0 0;
+}
+
+.form-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-button{
+    margin: 16px 0;
+    font-size: 20px;
+    color: #ebebeb;
+    width: 40%;
+    height: 40px;
+    cursor: pointer;
+    background-color: #1259c3;
+    border-radius:5px;
+}
+
+.form-button:hover{
+    box-shadow: 0 0 5px #1259c3;
+}
+
+.persona::after{
+    content: "Su nombre y apellido solamente puede contener letras.";
+    color:red;
+}
+
+.usuario::after{
+    content: "Su nombre de usuario solamente puede contener caracteres alfanuméricos.";
+    color:red;
+}
+
+.email::after{
+    content: "Su email solamente puede contener caracteres alfanuméricos, guiones medios, guiones bajos y el arroba como intermediario.";
+    color:red;
+}
+
+.localidad::after{
+    content: "La localidad solamente puede contener letras.";
+    color:red;
+}
+
+.calle::after{
+    content: "La calle solamente puede contener letras.";
+    color:red;
+}
+
+.altura::after{
+    content: "La altura solamente puede contener números.";
+    color:red;
+}
+
+.contrasenia::after{
+    content: "Su contraseña debe contener caracteres alfanuméricos, al menos un guión bajo o guión medio y una extensión mínima de 6 caracteres.";
+    color:red;
+}
+
+.contraseniaconfirmar::after{
+    content: "Por favor, verifique que su contraseña coincida en la confirmación.";
+    color:red;
+}
+
+
+/*  Ingreso  */
+
+
+.form-container-login{
+    width: 80%;
+    margin:20px auto;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #666;
+}
+
+.form-login{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.form-login label{
+    width: 100%;
+    font-weight: bold;
+    color:#666;
+}
+
+.form-login input{
+    margin: 5px 0;
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    border-radius: 2.5px;
+    border: 1px solid #666;
+}
+
+.form-button-login{
+    margin: 16px 0;
+    font-size: 16px;
+    color: #ebebeb;
+    width: 40%;
+    height: 40px;
+    cursor: pointer;
+    background-color: #1259c3;
+    border-radius:5px;
+}
+
+.form-button-login:hover{
+    box-shadow: 0 0 5px #1259c3;
+}
+
+.login::after{
+    content: "El nombre de usuario ingresado, no es correcto.";
+    color:red;
+}
+
+.login-contrasenia::after{
+    content: "La contraseña ingresada, no es correcta.";
+    color:red;
+}
+
+
+@media (min-width:361px) {
+    .main-section{
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .main-article{
+        width:42%;
+    }
+    .descripciones{
+        display:block;
+    }
+}
+
+@media screen and (min-width:761px){
+    .header-container-fl{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 25px;
+    }
+    .header-form-logo{
+        width:70%;
+    }
+    .header-form-logo form{
+        justify-content: space-between;
+    }
+    .header-input{
+        height: 20px;
+        border-radius: 5px;
+    }
+    .header-button{
+        height: 18px;
+        width: 18px;
+        background-color: #ebebeb;
+        border-radius: 0;
+    }
+    .header-p{
+        display:flex;
+        align-items: center;
+        width:30%;
+        height: 10vh;
+    }
+    nav, .nav-ul{
+        display:flex;
+        justify-content: space-between;
+    }
+    .nav-ul li{
+        margin:0 10px;
+    }
+    .burger-menu{
+        display:none;
+    }
+    .main-article{
+        width:22%;
+        height: 100%;
+    }
+    .form-container-register{
+        width: 50%;
+    }
+    .form-container-login{
+        width: 50%;
+    }
+    .form-button-login{
+        font-size: 20px;
+    }
+    .form-button-login:hover{
+        background-color: #0022AA;
+        transition: background-color 1s;
+    }
+    .descripciones{
+        display: none;
+        height: 0%;   
+    }
+    .articulo-producto:hover .descripciones{
+        display: block;
+        height: 100%;
+        transition: height 5ms;
+    }
+    .articulo-producto:hover i{
+        transform: rotate(-90deg);
+        transition: transform 1s;
+    }
+    .main-article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: box-shadow 1s;
+    }
+    footer{
+        padding:0px;
+    }
+    footer i:hover {
+        color: #EAC926;
+        transition: color 1s;
+    }
+    .footer-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .footer-article{
+        width: 30%;
+    }
+    .footer-article h5{
+        position:relative;
+        left:0;
+        width: 100%;
+    }    
+}
